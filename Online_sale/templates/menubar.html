@@ -1,0 +1,61 @@
+{% load staticfiles %}
+<br><br>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+
+
+<div class="navbar">
+
+  <div class="dropdown">
+    <button class="dropbtn">MERCHANT
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="{% url 'addmarchant'%}">ADD MAERCHANT</a>
+    </div>
+
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">SALES
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="">DAILY</a>
+      <a href=" ">WEEKLY</a>
+      <a href=" ">MONTHLY</a>
+      <a href=" ">YEARLY</a>
+    </div>
+
+  </div>
+    <div class="navbar">
+  <a href="">COMPLAINTS</a>
+
+
+
+
+
+    <div class="dropdown">
+        <form action="">
+    <button class="dropbtn">LOGOUT
+    </button></form>
+    <div class="dropdown-content">
+
+
+  </div>
+</div>
+</head>
+
+<br>
+<body>
+<br><br><br>
+
+        {% if message %}
+<h1 align="left" style="color: cornflowerblue">{{ message }}</h1>
+{% endif %}
+
+</body>
